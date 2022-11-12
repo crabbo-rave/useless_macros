@@ -31,6 +31,11 @@ def foo(a : Nat, b : Bool) -> Nat:
 
 def id'(α : Type, a : α) -> α: a
 
+def main() -> String: 
+  if true then "Hello World" else "Bad World"
+
+#eval main
+
 #eval add 1 5
 #eval foo 7 true
 #eval id' (List Nat) [1, 2, 3, 4]
